@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact page</title>
+         <!-- Font Awesome CSS: -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!--Bootstrap CSS:(carousel link) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons CSS:-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+
+    <!-- jQuery Slim (slim version): -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+    <!-- Popper.js: -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript (version 4): -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript Bundle (version 5): -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome JavaScript (with auto SVG replacement): -->
+  <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js"
+    data-auto-replace-svg="nest"></script>
+
+    <!-- Font Awesome Solid Icons JavaScript: -->
+  <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+
+  <!-- Font Awesome Brands Icons JavaScript: -->
+  <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+
+  <!-- jQuery (full version): -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Custom Script: -->
+  <script>
+      $(document).ready(function(){
+      $('#check').click(function(){
+          $('ul').toggleClass('show')
+      });
+      });
+  </script>
+
+  <!-- swiper css link -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Custom CSS: -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+
+    </head>
+    <body>
+
+        <!-- ------------------navbar header start------------------------------------ -->
+        <header>
+
+            <input type="checkbox" name id="chk1">
+
+            <div class="logo">
+                <a href="index.html">My Bookstore</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="search...">
+                <button type="submit">Go</button>
+            </div>
+
+            <div class="right-side">
+                <ul>
+                    <li>
+                        <a href="#" class="right-side-button"><i
+                                class="bi bi-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="right-side-button"><i
+                                class="bi bi-cart"></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#"
+                                class="dropdown-toggle right-side-button"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="bi bi-person-circle"></i></a>
+                            <div class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton">
+                                <button
+                                    class="btn btn-primary login"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#ex1">
+                                    Login
+                                </button>
+                                <button class="btn btn-primary signup"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#ex"> SignUp </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <label for="chk1" id="check">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+        </header>
+        <!-- --------------------------------- navbar end--------------------------------- -->
+
+        <!-- #contact page -->
+
+        <div class="container contact" id="contact">
+            <div class="contact-box">
+                <div class="left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9184086433215!2d72.4840978747692!3d22.990027617542953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aee6c89a621%3A0x872df2d55fbb0008!2sLJ%20University!5e0!3m2!1sen!2sin!4v1711703143076!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    Name:<input type="text" class="field"
+                        placeholder="Enter Your Name">
+                    Email:<input type="text" class="field"
+                        placeholder="Enter Your Email">
+                    Phone:<input type="text" class="field"
+                        placeholder="Enter Your Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+        <!-- -----contact page end------>
+
+        <!------------------------ login modal --------------------------------------------->
+        <div class="modal" id="ex1">
+            <section class="box">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Login</h5>
+                            <button class="close-btn" data-bs-dismiss="modal"><i
+                                    class="bi bi-x-circle"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="was-validated">
+                                    <fieldset>
+                                        <legend>Login Form</legend>
+                                        <div class="form-group">
+                                            <label for="uname"
+                                                class="form-label">Username:</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="uname"
+                                                placeholder="Enter username"
+                                                name="uname"
+                                                required />
+                                            <div
+                                                class="valid-feedback">Valid.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd"
+                                                class="form-label">Password:</label>
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                id="pwd"
+                                                placeholder="Enter password"
+                                                name="pswd"
+                                                required />
+                                            <div
+                                                class="valid-feedback">Valid.</div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="myCheck"
+                                                name="remember"
+                                                required />
+                                            <label class="form-check-label"
+                                                for="myCheck">I agree
+                                                to the terms and
+                                                conditions</label>
+                                            <div
+                                                class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">
+                                                Check this checkbox to continue.
+                                            </div>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-primary">
+                                            Submit
+                                        </button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ----------------------------- login modal end--------------------------------->
+
+        <!------------------------- SignUp modal----------------------------------------- -->
+        <div class="modal" id="ex">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">SignUp</h5>
+                        <button class="close-btn"
+                            data-bs-dismiss="modal"><i
+                                class="bi bi-x-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form class="was-validated">
+                                <fieldset>
+                                    <legend>SignUp Form</legend>
+                                    <div class="form-group">
+                                        <label for="uname"
+                                            class="form-label">First
+                                            Name:</label>
+                                        <input type="text"
+                                            class="form-control" id="uname"
+                                            placeholder="Enter first Name"
+                                            name="uname" required>
+                                        <div
+                                            class="valid-feedback">Valid.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uname"
+                                            class="form-label">Last
+                                            Name:</label>
+                                        <input type="text"
+                                            class="form-control" id="uname"
+                                            placeholder="Enter Last Name"
+                                            name="uname" required>
+                                        <div
+                                            class="valid-feedback">Valid.</div>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <label for="email">Email:</label>
+                                        <input type="email"
+                                            class="form-control" id="email"
+                                            placeholder="Enter email"
+                                            name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd"
+                                            class="form-label">Password:</label>
+                                        <input type="password"
+                                            class="form-control" id="pwd"
+                                            placeholder="Enter password"
+                                            name="pswd" required>
+                                        <div
+                                            class="valid-feedback">Valid.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd"
+                                            class="form-label">Confirm
+                                            Password:</label>
+                                        <input type="password"
+                                            class="form-control" id="pwd"
+                                            placeholder="Enter password"
+                                            name="pswd" required>
+                                        <div
+                                            class="valid-feedback">Valid.</div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="checkbox" id="myCheck"
+                                            name="remember" required>
+                                        <label class="form-check-label"
+                                            for="myCheck">I agree to the
+                                            terms and conditions</label>
+                                        <div
+                                            class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Check
+                                            this checkbox to continue.</div>
+                                    </div>
+
+                                    <button type="submit"
+                                        class="btn btn-primary">Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------signup modal end--------------------------------->
+
+        <!-- --------------------------------footer start------------------------------------>
+        <footer>
+            <p>&copy; 2024 My Bookstore.All Right Reserved</p>
+        </footer>
+        <!-- --------------------------------footer end------------------------------------->
+
+    </body>
+</html>

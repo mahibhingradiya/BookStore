@@ -1,0 +1,284 @@
+.shipping {
+    height: 34px;
+    width: 1520px;
+    color: #444444;
+    font: 16px arial;
+    background-color: #F5F5F5;
+    /* padding: 5px 0px; */
+    display: flex;
+}
+
+.shipping-image {
+    height: 24px;
+    width: 24px;
+    margin-left: 550px;
+    margin-top: 4px;
+    /* padding-left: 260px; */
+}
+
+.shipping-p {
+    height: 24px;
+    width: 360px;
+    color: #444444;
+    font: 16px arial;
+    margin-top: 7px;
+
+}
+
+
+
+/* <!-- book section----------- --> */
+
+.Book{
+    height: 497px;
+    width: 1520px;
+    color: #444444;
+    font: 16px arial;
+}
+
+.book-section{
+    height: 497px;
+    width: 1426px;
+    color: #444444;
+    font: 16px arial;
+    background-color: #FFFEFB;
+    margin: 72px 47px;
+    padding: 0px 20px;
+}
+
+.book-title{
+    height: 30px;
+    width: 1386px;
+    color: #000000;
+    font: 30px arial;
+    padding-left: 500px;
+}
+
+.book-title .new_noteworthy_text{
+    padding-right: 100px;
+
+}
+
+.book-books{
+    height: 405px;
+    width: 1322px;
+    color: #444444;
+    font: 16px arial;
+    margin-top: 60px;
+}
+
+.book-detail{
+    height: 398px;
+    width: 180px;
+    color: #444444;
+    font: 16px arial;
+    display: flex;
+    margin-left: 40px;
+}
+
+.book-image{
+    height: 285px;
+    width: 180px;
+    color: #000000;
+    font: 16px;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.book-image:hover{
+    height: 370px;
+    box-shadow: 1px 1px 1px 1px #000000;
+    background-color: #e1d7d7;
+}
+
+.product-detail{
+    height: 73px;
+    width: 180px;
+    color: #444444;
+    font: 16px arial;
+}
+
+.title{
+    height: 20px;
+    width: 180px;
+    font: 14px arial;
+    margin: 0px 0px 7px;
+    padding: 1.4px 0px 0px;
+    align-items: center;
+}
+
+.author{
+    height: 15px;
+    width: 180px;
+    color: #1F4F95;
+    font: 12px arial;
+    align-items: center;
+}
+.price{
+    height: 24px;
+    width: 180px;
+    color: #444444;
+    font: 16px arial;
+    margin: 8px 0px 0px;
+    align-items: center;
+}
+
+.product-btn{
+    height: 30px;
+    width: 180px;
+    /* color: #444444; */
+    font: 16px arial;
+    margin-left: 25px;
+    margin-top: 5px;
+    /* background-color: #000000; */
+}
+
+.btnn{
+    height: 25px;
+    width: 104px;
+    font: 10px arial;
+    color: #ffffff;
+    padding: auto;
+    /* padding-bottom: 20px; */
+    background-color: #000000;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+
+
+/* <!-- Featured Authors-------------------- --> */
+.fea-Authors{
+    height: 327px;
+    width: 1520px;
+    color: #444444;
+    font: 16px arial;
+    margin-top: 60px;
+}
+
+.fea-Authors-1{
+    height: 327px;
+    width: 1386px;
+    color: #444444;
+    font: 16px arial;
+    margin-top: 60px;
+    margin-left: 140px;
+    display: flex;
+
+}
+
+.fea-Authors-2{
+    height: 159px;
+    width: 210px;
+    color: #444444;
+    font: 16px;
+
+}
+.fea-Authors-img{
+    height: 120px;
+    width: 120px;
+    border-radius:100%;
+}
+.au-1{
+    height: 21px;
+    width: 210px;
+    margin: 0px 0px 7px;
+    padding: 1.4px 0px 0px;
+}
+
+/* .main_pic{
+    width: 80%;
+    scroll-behavior: none;
+} */
+
+/* @media (max-width:1500px){
+    .main_pic{
+        width:60%;
+    }
+
+    .shipping{
+        margin-right: 2400px;
+    }
+    .shipping .shipping-p{
+        font-size: 10px;
+        margin-right: 900px;
+
+    }
+    .shipping .shipping-image{
+        width: 20px;
+        margin-right: 900px;
+
+    }
+} */
+
+/* Additional CSS for responsiveness */
+/* @media only screen and (max-width: 1600px) {
+    .shipping {
+        width: 100%;
+        justify-content: center;
+    }
+    .shipping-image, .shipping-p {
+        margin-left: 0;
+    }
+    .shipping-p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .shipping {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shipping-p {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .book-section { */
+        /* 90 */
+        /* width: 96%;
+        margin: 50px auto;
+    }
+
+    .book-section .book-image{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-title {
+        width: 90%;
+        padding-left: 0;
+    }
+    .book-books {
+        width: 100%;
+    }
+    .book-detail {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .shipping, .book-section, .fea-Authors {
+        width: 100%;
+    }
+    .shipping-image, .shipping-p {
+        margin: 0;
+        text-align: center;
+    }
+    .book-detail {
+        flex-wrap: wrap;
+    }
+    .book-image {
+        width: 100%;
+    }
+    .title, .author, .price, .product-btn {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .btnn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */

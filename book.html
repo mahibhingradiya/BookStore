@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+
+      <!-- for Bootstrap Icon -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+      <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> -->
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://example.com/fontawesome/v6.5.1/js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/solid.js"></script>
+    <script src="https://example.com/fontawesome/v6.5.1/js/brands.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#check').click(function(){
+            $('ul').toggleClass('show')
+        });
+        });
+    </script>
+
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>  
+    <!-- header section -->
+    <header>
+
+        <input type="checkbox" name="" id="chk1">
+
+        <div class="logo">
+            <a href="">My Bookstore</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="search...">
+            <button type="submit">Go</button>
+        </div>
+
+        <div class="right-side">
+            <ul>
+              <li>
+                <a href="#" class="right-side-button"><i class="bi bi-heart"></i></a>
+              </li>
+              <li>
+                <a href="#" class="right-side-button"><i class="bi bi-cart"></i></a>
+              </li>
+              <li>
+                <div class="dropdown" >
+                  <a href="#" class="dropdown-toggle right-side-button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="bi bi-person-circle"></i></a>
+                  <div class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton">
+                    <button
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ex1">
+                           Login  
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#ex">     SignUp  </button>
+                    <!-- <a class="dropdown-item" href="#">Login</a> -->
+                    <!-- <a class="dropdown-item" href="#">Sign up</a> -->
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+
+        <!-- <div class="user">
+            <a href=""><i class="fab fa-facebook"></i></a>
+        </div> -->
+
+        <div class="menu">
+            <label for="chk1" id="check">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+ <!-- --------------------------------- -->
+    <div class="container-fluid">
+        <!-- product no -->
+        <div class="tdk-pro-count tdkcount-desktop" style="display: block;"><span class="image_number">1</span>/20</div>
+        <div class="row" onmouseover="showImageNumber(0)"><img src="b1_img.png" width="100%" height="500px" alt=""></div>
+
+
+<!-- crossword---------------------------------------------------------------- -->
+        <div class="book_caro">
+            <a href="#m2" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            
+        </div>
+
+
+
+
+
+
+        <!-- PRODUCTS     -->
+        <div class="row py-3">
+            <!-- 1.PRODUCT -->
+                <div class="col-3">
+                    <div id="m2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(1)" >
+                                    <img src="eng_book2.png"  alt="">
+                                    <button class="add-to-cart-btn">+ADD TO CART</button>
+                                    <button class="save-40-btn">HAND PAINTED</button>
+                                    <button class="Quick-View-btn">Quick View</button>
+                               
+                            </div>
+                            <div class="carousel-item" class="product" onmouseover="showImageNumber(1)" >
+                               
+                                    <img src="eng_book2.png"   alt="">
+                                    <button class="add-to-cart-btn">+ADD TO CART</button>
+                                    <button class="save-40-btn">HAND PAINTED</button>
+                                    <button class="Quick-View-btn">Quick View</button>
+                               
+                            </div>
+                        </div>
+                        <a href="#m2" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m2" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                    <a  href="#" class="product-item-meta__title">Rendezvous with Blue - Wall Mounted Planter Kettle</a>
+                    <span class="price">
+                    <span class="visually-hidden"></span>₹ 3,600.00</span>
+                    </div>
+                </div>
+                <!-- 2.PRODUCT -->
+                <div class="col-3">
+                    <div id="m0" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(2)" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="save-40-btn">HAND PAINTED</button>
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="Quick-View-btn">Quick View</button>
+
+                            </div>
+                            <div class="carousel-item" onmouseover="showImageNumber(2)" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">HAND PAINTED</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m0" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m0" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Rendezvous with Blue - Wall Mounted Planter Kettle</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹2850.00</span>
+                        </div>
+                </div> 
+                <!-- 3.PRODUCT -->
+                <div class="col-3">
+                    <div id="m3" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"  onmouseover="showImageNumber(3)">
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png" onmouseover="showImageNumber(3)"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m3" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m3" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Palette 9-Plate Wall Collage</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹9900.00</span>
+                        </div>
+                </div> 
+                <!-- 4.PRODUCT -->
+                <div class="col-3">
+                    <div id="m4" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"  onmouseover="showImageNumber(4)">
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" onmouseover="showImageNumber(4)" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CARTt</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m4" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m4" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">North Coast 4-Plate Wall Collage</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹5280.00</span>
+                        </div>
+                </div>
+                <!-- 5.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m5" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(5)" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png" onmouseover="showImageNumber(5)"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m5" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m5" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Angel Cherub - Wall Mounted Planter Urn</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹3850.00</span>
+                        </div>
+                </div>
+                <!-- 6.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m6" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(6)" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" onmouseover="showImageNumber(6)" >
+                                <img src="eng_book2.pngp"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m6" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m6" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Cast Iron Wall Mounted Deer Bell</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹2290.00</span>
+                        </div>
+                </div>
+                 <!-- 7.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m7" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(7)" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" onmouseover="showImageNumber(7)">
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m7" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m7" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Wall Hanging Decorative Luggage</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹2910.00</span>
+                        </div>
+                </div>
+                 <!-- 8.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m8" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" onmouseover="showImageNumber(8)">
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" onmouseover="showImageNumber(8)" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m8" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m8" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="eng_book2.png" class="product-item-meta__title">Wall Hanging Decorative Luggage</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹2910.00</span>
+                        </div>
+                </div>
+                 <!-- 9.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m9" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(10)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m9" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m9" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Maximizing Storage:Double Deck Rack - Set of 2</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹3990.00</span>
+                        </div>
+                </div>
+                 <!-- 10.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m10" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(11)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m10" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m10" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Rustic Charm' Wooden Wall Cabinet - 4 Drawer</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹7500.00</span>
+                        </div>
+                </div> 
+                 <!--11.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m11" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(12)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m11" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m11" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Rustic Charm' Wooden Wall Cabinet - 3 Drawer</a>
+                            <span class="visually-hidden"></span>₹ 5,880.00</span>
+                          <span class="price price--compare">
+                            <span class="visually-hidden"></span>₹ 9,800.00</span></div>
+                </div>
+                 <!-- 12.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m12" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(13)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m12" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m12" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Cast Iron Bird Feeder / Bird Bath</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹3450.00</span>
+                        </div>
+                </div> 
+                 <!-- 13.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m13" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(14)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m13" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m13" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Nightingale Wall Mounted Ceramic Birds Gold Small - Set of 12</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹7600.00</span>
+                        </div>
+                </div> 
+                 <!-- 14.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m14" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(15)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m14" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m14" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">Rhinoceros Safari Wall Hook - Gold</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹690.00</span>
+                        </div>
+                </div> 
+                 <!-- 15.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m15" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(16)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m15" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m15" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'City Life' Open Book Wall Accent</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹2670.00</span>
+                        <span class="price price--compare">
+                            <span class="visually-hidden"></span>₹ 4450.00</span>
+                        </div>
+                </div> 
+                 <!-- 16.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m16" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(17)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m16" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m16" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Welcome to our Farm House' Tin Bar Sign</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹510.00</span>
+                        </div>
+                </div>
+                 <!-- 17.PRODUCT -->
+                 <div class="col-3 py-3">
+                    <div id="m17" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(18)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m17" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m17" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Coffee' Tin Bar Sign</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹390.00</span>
+                        </div>
+                </div>  
+                 <!-- 18.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m18" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(19)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m18" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m18" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Support Local Farmers' Tin Bar Sign</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹510.00</span>
+                        </div>
+                </div> 
+                 <!-- 19.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m19" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(19)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            
+                        </div>
+                        <a href="#m19" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m19" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Support Local Farmers' Tin Bar Sign</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹414.00</span>
+                        </div>
+                </div> 
+                 <!-- 20.PRODUCT -->
+                <div class="col-3 py-3">
+                    <div id="m20" class="carousel slide">
+                        <div class="carousel-inner" onmouseover="showImageNumber(20)">
+                            <div class="carousel-item active" >
+                                <img src="eng_book2.png"  alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="eng_book2.png"   alt="">
+                                <button class="add-to-cart-btn">+ADD TO CART</button>
+                                <button class="save-40-btn">save 40%</button>
+                                <button class="Quick-View-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <a href="#m20" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#m20" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div align="center">
+                        <a href="#" class="product-item-meta__title">'Nightingale' Wall Mounted Ceramic Birds Large - Set of 6</a>
+                        <span class="price">
+                        <span class="visually-hidden"></span>₹4800.00</span>
+                        </div>
+                </div> 
+            </div>
+ 
+        </div>
+        
+    </div>      
+                
+                 
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
